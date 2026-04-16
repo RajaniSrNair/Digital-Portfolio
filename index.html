@@ -7,6 +7,140 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- ✨ POLISHED STYLE (makes everything look modern immediately) -->
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin:0;
+            background:#f7f8fc;
+            color:#1f1f1f;
+        }
+
+        nav{
+            background:white;
+            padding:15px 0;
+            box-shadow:0 2px 10px rgba(0,0,0,0.05);
+            position:sticky;
+            top:0;
+        }
+
+        .container{
+            width:85%;
+            margin:auto;
+        }
+
+        .nav-container{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .nav-links{
+            list-style:none;
+            display:flex;
+            gap:20px;
+        }
+
+        .nav-links a{
+            text-decoration:none;
+            color:#333;
+            font-weight:500;
+        }
+
+        .hero{
+            padding:60px 0;
+            background:white;
+        }
+
+        .hero-content{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            gap:40px;
+        }
+
+        .hero h1{
+            font-size:36px;
+            margin-bottom:10px;
+        }
+
+        .highlight{
+            color:#4f46e5;
+        }
+
+        .hero img{
+            width:260px;
+            border-radius:20px;
+            box-shadow:0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        section{
+            padding:60px 0;
+        }
+
+        h2{
+            font-size:28px;
+            margin-bottom:20px;
+            color:#111;
+        }
+
+        h3{
+            margin-top:25px;
+            color:#333;
+        }
+
+        /* Skills */
+        .skills-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+            gap:15px;
+        }
+
+        .skill-card{
+            background:white;
+            padding:15px;
+            border-radius:10px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        /* Projects */
+        .project-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .project-card{
+            background:white;
+            padding:15px;
+            border-radius:12px;
+            box-shadow:0 4px 12px rgba(0,0,0,0.08);
+            transition:0.3s;
+        }
+
+        .project-card:hover{
+            transform:translateY(-5px);
+        }
+
+        .card-img img{
+            width:100%;
+            border-radius:10px;
+        }
+
+        /* Footer */
+        footer{
+            background:#111;
+            color:white;
+            text-align:center;
+            padding:40px 0;
+        }
+
+        footer p{
+            margin:5px 0;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -14,10 +148,11 @@
 <!-- NAV -->
 <nav>
     <div class="container nav-container">
-        <div class="logo">PORTFOLIO</div>
+        <div class="logo"><b>PORTFOLIO</b></div>
 
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -29,134 +164,90 @@
 <header id="home" class="hero">
     <div class="container hero-content">
 
-        <div class="hero-text">
-
-            <span class="badge">ABOUT ME</span>
-
+        <div>
             <h1>I am <span class="highlight">RAJANI S R NAIR</span></h1>
 
             <p>
                 Principal Program Leader with 13+ years of experience leading AI, product, and enterprise transformation programs across global organizations.
-                I have worked across automotive, robotics, semiconductor, mining, and fintech industries delivering measurable business impact and strategic execution.
+                I have delivered large-scale strategic programs across automotive, robotics, semiconductor, mining, and fintech industries.
                 <br><br>
-                I am currently expanding my expertise in Applied AI Solutions Development, focusing on intelligent systems, analytics, and data-driven decision-making.
+                I am currently expanding my expertise in Applied AI Solutions Development, focusing on intelligent systems and analytics.
             </p>
-
         </div>
 
-        <!-- PROFILE IMAGE -->
-        <div class="hero-image-container">
-            <img src="rajani_photo.jpg" alt="Rajani Profile Photo"
-                 style="width:260px; border-radius:20px; box-shadow:0 10px 30px rgba(0,0,0,0.2);">
+        <div>
+            <img src="rajani_photo.jpg" alt="Profile Photo">
         </div>
 
     </div>
 </header>
 
+<!-- SKILLS -->
+<section id="skills">
+    <div class="container">
+
+        <h2>Skills</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">Program Management</div>
+            <div class="skill-card">Stakeholder Management</div>
+            <div class="skill-card">AI / ML Programs</div>
+            <div class="skill-card">Power BI & Dashboards</div>
+            <div class="skill-card">Python</div>
+            <div class="skill-card">Agile / Scrum</div>
+            <div class="skill-card">MS Project</div>
+            <div class="skill-card">Data Analytics</div>
+
+        </div>
+
+    </div>
+</section>
+
 <!-- PROJECTS -->
-<section id="projects" class="projects">
+<section id="projects">
 
     <div class="container">
 
         <h2>Projects</h2>
 
-        <!-- BUSINESS PROJECTS -->
-        <h3>Leadership & Strategy Projects</h3>
+        <h3>Leadership & Strategy</h3>
 
         <div class="project-grid">
 
             <div class="project-card">
                 <div class="card-img">
-                    <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1" alt="Robotics">
+                    <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1">
                 </div>
-                <div class="card-content">
-                    <h3>ABB Robotics OnePoint Tool</h3>
-                    <p>Global operating system enabling standardized execution across 38 countries.</p>
-                </div>
+                <h3>ABB Robotics OnePoint Tool</h3>
+                <p>Global operating system across 38 countries.</p>
             </div>
 
             <div class="project-card">
                 <div class="card-img">
-                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b" alt="Blockchain">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b">
                 </div>
-                <div class="card-content">
-                    <h3>Mercedes Benz Blockchain Platform</h3>
-                    <p>Blockchain-based automotive financial services marketplace.</p>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="card-img">
-                    <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74" alt="G20">
-                </div>
-                <div class="card-content">
-                    <h3>G20 TechEquity Platform</h3>
-                    <p>Digital inclusion initiative aligning global stakeholders.</p>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="card-img">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f" alt="Intel">
-                </div>
-                <div class="card-content">
-                    <h3>Intel Strategic Initiatives</h3>
-                    <p>Identified $170M+ opportunity and drove $1.4B market expansion.</p>
-                </div>
+                <h3>Mercedes Blockchain</h3>
+                <p>Automotive financial services blockchain platform.</p>
             </div>
 
         </div>
 
-        <!-- TECH PROJECTS -->
-        <h3 style="margin-top:40px;">Technical Projects (GitHub)</h3>
+        <h3>Technical Projects</h3>
 
         <div class="project-grid">
 
-            <a href="https://github.com/RajaniSrNair/SproutFlux-iOS-MVP" target="_blank">
+            <a href="https://github.com/RajaniSrNair/SproutFlux-iOS-MVP">
                 <div class="project-card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c" alt="SproutFlux">
-                    </div>
-                    <div class="card-content">
-                        <h3>SproutFlux iOS MVP</h3>
-                        <p>Farm waste management iOS application for The Six Farms (Oakville).</p>
-                    </div>
+                    <h3>SproutFlux iOS MVP</h3>
+                    <p>Farm waste management application.</p>
                 </div>
             </a>
 
-            <a href="https://github.com/RajaniSrNair/CashRegisterApp" target="_blank">
+            <a href="https://github.com/RajaniSrNair/CashRegisterApp">
                 <div class="project-card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4" alt="Cash Register">
-                    </div>
-                    <div class="card-content">
-                        <h3>Cash Register App</h3>
-                        <p>Kotlin + Jetpack Compose MVVM Android application.</p>
-                    </div>
-                </div>
-            </a>
-
-            <a href="https://github.com/RajaniSrNair/SimpleWebScraper" target="_blank">
-                <div class="project-card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5" alt="Scraper">
-                    </div>
-                    <div class="card-content">
-                        <h3>Python Web Scraper</h3>
-                        <p>Automated web data extraction using BeautifulSoup.</p>
-                    </div>
-                </div>
-            </a>
-
-            <a href="https://github.com/RajaniSrNair/MyBookApp" target="_blank">
-                <div class="project-card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba" alt="Book App">
-                    </div>
-                    <div class="card-content">
-                        <h3>MyBookApp</h3>
-                        <p>Android MVC learning app with multi-activity navigation.</p>
-                    </div>
+                    <h3>Cash Register App</h3>
+                    <p>Android MVVM application.</p>
                 </div>
             </a>
 
@@ -167,47 +258,32 @@
 </section>
 
 <!-- EDUCATION -->
-<section id="education" class="education">
-
+<section id="education">
     <div class="container">
 
         <h2>Education & Certifications</h2>
 
-        <h3>Education</h3>
-        <ul>
-            <li>Applied AI Solutions Development – George Brown College (Ongoing)</li>
-            <li>MBA – Finance, CUHK Business School</li>
-            <li>M.Tech – IIT Madras</li>
-            <li>B.Tech – Electronics & Communication Engineering</li>
-        </ul>
+        <p><b>Applied AI</b> – George Brown College (Ongoing)</p>
+        <p><b>MBA</b> – CUHK</p>
+        <p><b>M.Tech</b> – IIT Madras</p>
+        <p><b>B.Tech</b> – ECE</p>
 
-        <h3>Certifications</h3>
-        <ul>
-            <li>PMP® – Project Management Institute</li>
-            <li>Certified ScrumMaster (CSM)</li>
-            <li>Microsoft Azure Fundamentals (AZ-900)</li>
-            <li>Lean Six Sigma Green Belt</li>
-            <li>ISO 9001 & ISO 13485 Certifications</li>
-        </ul>
+        <br>
+
+        <p><b>PMP</b> | CSM | Azure Fundamentals | Six Sigma | ISO Certifications</p>
 
     </div>
-
 </section>
 
 <!-- CONTACT -->
 <footer id="contact">
 
-    <div class="container">
+    <p><b>Email:</b> rajaniv5@gmail.com</p>
+    <p><b>Phone:</b> +1 437 967 1477</p>
+    <p><b>Location:</b> Toronto, Canada</p>
 
-        <h2>Contact</h2>
-
-        <p>Email: rajaniv5@gmail.com</p>
-        <p>Phone: +1 (437) 967-1477</p>
-        <p>Location: Toronto, Ontario, Canada</p>
-
-        <p>© 2024 Rajani S R Nair</p>
-
-    </div>
+    <br>
+    <p>© 2024 Rajani S R Nair</p>
 
 </footer>
 
